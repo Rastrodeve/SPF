@@ -1,0 +1,148 @@
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #808080 #C0C0C0;
+    /* scrollbar-color: #999999 #001F3F; */
+}
+html::-webkit-scrollbar {
+    width: 7px;
+    background:#ECF0F1;
+}
+
+html::-webkit-scrollbar-track {
+    background: #C0C0C0;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #808080;
+}
+
+.cont-carga {
+    width: 100%;
+    height: 100%;
+    background: #E6E6E6;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    justify-content: center;
+    z-index: 1035;
+}
+
+.pre-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.pre-loader>span {
+    height: 2em;
+    width: 2em;
+    background: #001f3f;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.pre-loader>span:nth-child(1) {
+    left: -4.5em;
+    animation-delay: 0s;
+}
+
+.pre-loader>span:nth-child(2) {
+    left: -1.5em;
+    animation-delay: 0.1s;
+}
+
+.pre-loader>span:nth-child(3) {
+    left: 1.5em;
+    animation-delay: 0.2s;
+}
+
+.pre-loader>span:nth-child(4) {
+    left: 4.5em;
+    animation-delay: 0.3s;
+}
+
+@keyframes wave {
+
+    0%,
+    75%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    25% {
+        transform: translateY(2.5em);
+    }
+
+    50% {
+        transform: translateY(-2.5em) scale(1.1);
+    }
+}
+
+.main-header {
+    border-bottom: 3px solid #C0C0C0;
+}
+
+.spinner-border {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #001f3f;
+}
+/* MENU DEL MYSQL*/
+.sidebar {
+    position: absolute;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.sidebar ul {
+    margin: 10px auto;
+    display: block;
+}
+
+
+
+h1 {
+    color:#f90;
+    font-size:180%;
+    font-weight:normal;
+}
+#contenido {
+    transition: margin-left .4s;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
